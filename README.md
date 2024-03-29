@@ -173,59 +173,63 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-
+![16](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/c54659ae-8415-4d86-82f6-b975ba714d70)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-
+![17](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/9cd9b749-3efe-467b-a292-6225f7eea3d8)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-
-
+![18](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/87018045-f97e-4c31-943b-341c17423e90)
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-
+![19](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/d08322f6-aceb-40a6-821f-008f20d85dd3)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
-
+![20](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/ceab53e7-f82f-4bcc-af10-91c0e0f5f141)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
+![21](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/38f28771-ae56-4891-b325-0d6a9e93f41f)
 
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-
+![22](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/6c604f63-2369-4d1a-8ab3-4d7b65c32537)
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-
+![23](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/9cca5fed-6632-4149-8a78-c809c92d7c33)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
+![24](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/15e70b4b-7a7b-4602-9635-77a44921967b)
 
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+![25](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/b05ea97a-c37c-40da-bd42-63a0fa9fb48f)
 
 
 egrep l{2} newfile
 ## OUTPUT
-
+![26](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/595f5970-7414-4faa-a26f-ff8926f83a0a)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
+![27](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/009a0afa-0adc-4615-a466-b6231f23d2c6)
+
 
 
 cat > file23
@@ -244,27 +248,27 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+![28](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/79762d67-4f65-468d-afa8-c577467383e3)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-
+![29](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/a6d2e835-e398-4823-a7fa-5445ccb5a901)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-
+![30](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/6d6183f8-f583-483c-ae86-b6d82286019a)
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-
+![31](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/163c2c42-13de-4228-809a-033d0928e10f)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-
+![32](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/b6a56c0b-bf64-417d-9e1c-4f5a93f358da)
 
 
 sed -n -e '1,5p' file23
