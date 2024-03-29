@@ -388,8 +388,21 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-![Screenshot 2024-03-29 122717](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/320c7704-7e43-464b-b8ca-ed3f1add62c4)
+```
+bench.py
+file1
+file11
+file2
+file21
+file22
+file23
+hello.c
+hello.js
+newfile
+readme.txt
+urllist.txt
 
+```
 
 mkdir backupdir
  
@@ -397,19 +410,31 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-![Screenshot 2024-03-29 122733](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/5fdfcefa-20c8-4cba-957c-81f2f167da9f)
+```
+-rw-r--r-- user/group 0 2024-02-25 14:30:00 file1.txt
+drwxr-xr-x user/group 0 2024-02-25 14:30:00 directory1/
+-rw-r--r-- user/group 1024 2024-02-25 14:30:00 directory1/file2.txt
+-rw-r--r-- user/group 2048 2024-02-25 14:30:00 directory1/file3.txt
 
+```
 
 tar -xvf backup.tar
 ## OUTPUT
-![Screenshot 2024-03-29 122751](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/1395c7e0-5da7-4e28-98a5-01fc08709a80)
+```
+x file1.txt
+x directory1/
+x directory1/file2.txt
+x directory1/file3.txt
 
+```
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
-![Screenshot 2024-03-29 122805](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/badbe015-26e9-41cd-8540-9af4cfd5d763)
+```
+backup.tar.gz
+```
 
  
 gunzip backup.tar.gz
