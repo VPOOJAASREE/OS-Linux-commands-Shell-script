@@ -273,51 +273,52 @@ sed  '/tom/s/5000/6000/' file23
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-
+![33](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/7ce4349c-40af-4e70-99cc-fb9377fc9810)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-
-
+![34](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/d0b928de-6ef6-4c87-b211-767699188e94)
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-
+![35](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/f9a1cc98-3868-4abf-9e83-00afb06ee3f5)
 
 
 seq 10 
 ## OUTPUT
-
+![36](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/c21392f5-80dd-43c0-be44-d9a918c05b7a)
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-
+![37](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/1caa1a54-e28f-4631-9d4e-718f6c06b617)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-
+![38](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/c621dd52-1e88-4a48-a82a-9a94ac209bb8)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-
+![39](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/9b419ee3-a53b-4fa6-849e-7eaf4100891a)
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
+![40](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/6f59e417-bee1-4849-a4e6-90800f95590a)
 
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
+![41](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/07615a7f-e479-4842-99f9-449cd86a7d5a)
 
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-
+![42](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/b8dc42e1-b0a7-4dd3-92ee-8bf36276ca13)
 
 
 sed -n '2,4{s/$/*/;p}' file23
@@ -334,6 +335,8 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
+![43](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/7ddba572-36fe-4051-90b2-94fbec1b00c0)
+
 
 
 cat > file22
