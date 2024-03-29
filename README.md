@@ -88,17 +88,18 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
-
+![6](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/d174de7f-5a57-448c-920d-4db2819ba777)
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
+![7](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/d71a633f-3ae3-48e0-bcfd-ea3f75b2983a)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+![8](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/6b0d3852-a8d7-4f36-8990-f73df0564d61)
+
 
 
 cat < newfile 
@@ -113,39 +114,42 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
-
+![9](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/cfeb20d5-8c20-4a07-ae94-77cddd26bafe)
 
 
 grep hello newfile 
 ## OUTPUT
-
-
+![10](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/69af16c5-80e9-4c71-abf9-fa5647db389b)
 
 
 grep -v hello newfile 
 ## OUTPUT
-
+![11](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/60c40c09-606d-4901-a7f2-10754416ab03)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
+![12](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/55a8b75d-b507-4539-a960-0b1e3f99adec)
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
+![13](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/51276fc6-65cc-4c29-83e1-fd631c6d83b4)
 
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
+![14](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/35961fed-0a61-4357-a85a-cc227da6d754)
 
 
 
 grep -w -n world newfile   
 ## OUTPUT
+![15](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/92b93a08-db9e-401b-8750-3418d7ab1266)
+
 
 
 cat < newfile 
