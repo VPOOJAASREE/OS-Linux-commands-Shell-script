@@ -42,23 +42,29 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-
+![1](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/7d68dce0-534a-4e2c-8b89-d822f595251d)
 
 
 cat < file2
 ## OUTPUT
+![2](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/4dc8ba1f-c6a0-4142-9c59-e153627bbe0b)
 
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
+![3](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/82bbb511-bebc-4949-913c-2004b6132263)
+
  
 comm file1 file2
  ## OUTPUT
+ ![4](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/80cce471-2ba7-477a-83aa-6ecf0db66e90)
 
- 
+
 diff file1 file2
 ## OUTPUT
+![5](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/fe734926-2f5b-485f-9956-f8ea7da9c0ab)
+
 
 
 #Filters
