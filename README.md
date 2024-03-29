@@ -322,6 +322,8 @@ sed -n '2,4{s/^/$/;p}' file23
 
 
 sed -n '2,4{s/$/*/;p}' file23
+## OUTPUT
+![43](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/7ddba572-36fe-4051-90b2-94fbec1b00c0)
 
 
 #Sorting File content
@@ -335,8 +337,6 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-![43](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/7ddba572-36fe-4051-90b2-94fbec1b00c0)
-
 
 
 cat > file22
