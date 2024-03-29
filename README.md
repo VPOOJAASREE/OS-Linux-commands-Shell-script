@@ -452,8 +452,9 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
+![49](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/765d0a00-2ba9-430a-acf8-d9dc73125141)
 
- 
+
 cat << stop > herecheck.txt
 ```
 hello in this world
@@ -464,6 +465,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
+![50](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/20e50bd2-c345-4276-92c6-57efe003f5df)
 
 
 cat < scriptest.sh 
@@ -502,23 +504,38 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
+```
+File name is ./scriptest.sh
+File name is scriptest.sh
+First arg. is 1
+Second arg. is 2
+Third arg. is 3
+Fourth arg. is
+The $@ is 1 2 3
+The $\# is $#
+The $$ is 124
 
- 
+```
+
 ls file1
 ## OUTPUT
+![51](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/32f14cda-85da-4efb-a073-14b65a574a2c)
+
 
 echo $?
 ## OUTPUT 
-./one
-bash: ./one: Permission denied
+![52](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/11d766a4-5614-4761-8f1f-f07ed68eff20)
+
+
  
 echo $?
 ## OUTPUT 
- 
 abcd
  
 echo $?
  ## OUTPUT
+ ./one
+bash: ./one: Permission denied
 
 
  
@@ -550,15 +567,19 @@ else
 echo "$val1 is less than $val2"
 fi
 ```
-##OUTPUT
+## OUTPUT
 
+![53](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/c7546e0f-d635-4081-a326-8f416fb873b2)
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+```
+baseball is less than hockey
 
+```
 
 # check file ownership
 cat < psswdperm.sh 
@@ -585,9 +606,14 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+```
+You are the owner of the /etc/passwd file
+
+```
 
 # check if with file location
 cat>ifnested.sh 
+
 ```bash
 \#!/bin/bash
 if [ -e $HOME ]
@@ -607,8 +633,11 @@ else
 echo “Sorry, the object does not exist”
 fi
 ^d
+
 ```
+
 cat ifnested.sh 
+
 ```
 \#!/bin/bash
 if [ -e $HOME ]
@@ -632,6 +661,7 @@ fi
 ./ifnested.sh 
 ## OUTPUT
 
+![54](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/1215c2f0-4bb9-45df-9298-fab49c428be6)
 
 
 # using numeric test comparisons
@@ -653,8 +683,7 @@ fi
 ^d
 ```
 
-
-cat iftest.sh 
+cat iftest.sh
 ```bash
 \#!/bin/bash
 val1=10
@@ -674,7 +703,11 @@ fi
 $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
-##OUTPUT
+
+## OUTPUT
+
+![55](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/c7573b7d-b0ad-4f80-89da-22d6fbc4a835)
+
 
 # check if a file
 cat > ifnested.sh 
@@ -723,7 +756,11 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
+
+## OUTPUT
+
+![56](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/56b2d67b-584d-418e-953b-7f027cae7b5a)
+
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -752,7 +789,16 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
+```
+Welcome Ram
+Please enjoy your visit
+Welcome Rahim
+Please enjoy your visit
+Special testing account
+gganesh, Do not forget to logout when you're done
+Sorry, you are not allowed here
 
+```
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -767,7 +813,11 @@ fi
 ```
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
+
 ## OUTPUT
+
+![57](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/42c7eadf-daf3-4759-b12d-73252f6ff78f)
+
 
 # using the case command
 cat >casecheck.sh 
@@ -787,6 +837,17 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
+
+## OUTPUT
+```
+Welcome Ram/Rahim
+Please enjoy your visit
+Special testing account
+gganesh, Do not forget to logout when you're done
+Sorry, you are not allowed here
+
+```
+
  
 cat > whiletest
 ```bash
@@ -802,8 +863,21 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
- 
+
+## OUTPUT
+```
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+```
+
 cat untiltest.sh 
 ```bash
 \#using the until command
@@ -814,9 +888,16 @@ echo $var1
 var1=$[ $var1 - 25 ]
 done
 ``` 
-$ chmod 755 untiltest.sh
- 
- 
+$ chmod 755 untiltest.sh $ chmod 755 untiltest.sh $ ./ untiltest.sh
+
+## OUTPUT
+```
+100
+75
+50
+25
+```
+
  
 cat forin1.sh 
 ```bash
@@ -841,7 +922,17 @@ echo “word:$test”
 done
  ```
  
-$ chmod 755 forin2.sh
+$ chmod 755 forin2.sh $ ./forin1.sh
+
+## OUTPUT
+```
+The next state is Alabama
+The next state is Alaska
+The next state is Arizona
+The next state is Arkansas
+The next state is California
+The next state is Colorado
+```
  
 cat forin2.sh 
 ```bash
@@ -866,6 +957,13 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
+
+## OUTPUT
+```
+word:I
+word:dont know if thisll
+word:work
+```
  
 cat forin1.sh 
 ```bash
@@ -876,9 +974,18 @@ do
 echo The next state is $test
 done
 ```
-$ chmod 755 forin1.sh
+$ ./forin3.sh 
 
 ## OUTPUT
+```
+word:I
+word:don't
+word:know
+word:if
+word:this'll
+word:work
+```
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -900,6 +1007,15 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
+```
+Visit beautiful Hyderabad
+Visit beautiful Alampur
+Visit beautiful Basara
+Visit beautiful Warangal
+Visit beautiful Adilabad
+Visit beautiful Bhadrachalam
+Visit beautiful Khammam
+```
 
 
 cat forctype.sh 
@@ -913,7 +1029,15 @@ done
 ````
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
+
 ## OUTPUT
+```
+The value of i is 1
+The value of i is 2
+The value of i is 3
+The value of i is 4
+The value of i is 5
+```
 
 cat forctype1.sh 
 ```bash
@@ -926,7 +1050,15 @@ done
 ```
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
+
 ## OUTPUT
+```
+1 - 5
+2 - 4
+3 - 3
+4 - 2
+5 - 1
+```
 
 cat fornested1.sh 
 ```bash
@@ -944,8 +1076,22 @@ done
 $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
- ## OUTPUT
 
+ ## OUTPUT
+ ```
+Starting loop 1:
+ Inside loop: 1
+ Inside loop: 2
+ Inside loop: 3
+Starting Loop 2:
+ Inside loop: 1
+ Inside loop: 2
+ Inside loop: 3
+Starting Loop 3:
+ Inside loop: 1
+ Inside loop: 2
+ Inside loop: 3
+```
  
 cat forbreak.sh 
 ```bash
@@ -961,13 +1107,18 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
-
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
- 
-cat forbreak.sh 
+
+## OUTPUT
+```
+Iteration number: 1
+Iteration number: 2
+The for loop is completed
+```
+
+cat forcontinue.sh 
 ```bash
 #!/bin/bash
 # breaking out of a for loop
@@ -981,12 +1132,18 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-
- 
 $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
+
 ## OUTPUT
+```
+Iteration number: 1
+Iteration number: 2
+Iteration number: 4
+Iteration number: 5
+The for loop is completed
+```
  
 cat exread.sh 
 ```bash
@@ -1000,8 +1157,11 @@ echo "Hello $name, welcome to my program. "
 $ chmod 755 exread.sh 
  
 $ ./exread.sh 
-## OUTPUT
 
+## OUTPUT
+```
+Enter your name: Poojaasree
+Hello Poojaasree, welcome to my program.
 
  cat exread1.sh
 ```bash
@@ -1013,8 +1173,10 @@ echo "Hello $name, welcome to my program. “
 $ chmod 755 exread1.sh 
 
 ## OUTPUT
-
-
+```
+Enter your name: Poojaa
+Hello Poojaa, welcome to my program.
+```
 
 $ ./exread1.sh 
  
@@ -1033,12 +1195,25 @@ else
 echo "Usage: badtest1 a b"
 fi
 ```
+
+./funcex.sh 
+
+```
+Usage: badtest1 a b
+```
+
+./funcex.sh 1 2
+
+```
+The result is 2
+```
+
 ## OUTPUT
- ./funcex.sh 
 
- 
- ./funcex.sh 1 2
-
+```
+$ bash script.sh 1 2
+The result is 2
+```
  
 cat argshift.sh
 ```bash
@@ -1050,8 +1225,15 @@ done
 ```
 $ chmod 777 argshift.sh
 
-## OUTPUT
 $ ./argshift.sh 1 2 3
+
+## OUTPUT
+
+```
+1
+2
+3
+```
  
  cat argshift1.sh
 ```bash
@@ -1067,8 +1249,16 @@ for (( i=0;i<$ELEMENTS;i++)); do
 done
 ```
 $ chmod 777 argshift.sh
-## OUTPUT
+
 $ ./argshift.sh 1 2 3
+
+## OUTPUT
+
+```
+1
+2
+3
+```
  
 cat argshift.sh
 ```bash
@@ -1080,8 +1270,25 @@ while (( "$#" )); do
 done
 set +x
 ```
+$./argshift.sh 1 2 3
+
 ## OUTPUT
- ./argshift.sh 1 2 3
+```
++ ((  3  ))
++ echo 1 
+1
++ shift
++ ((  2  ))
++ echo 2
+2
++ shift
++ ((  1  ))
++ echo 3
++ shift
++ ((  0  ))
++ set +x
+
+```
  
  
 cat > nc.awk
@@ -1112,7 +1319,23 @@ bcdfghj
 ubcdfghj
 ```
 awk -f nc.awk data.dat
+
 ## OUTPUT 
+```
+7         bcdfghj
+8	  abcdfghj
+7	  bcdfghj
+8  	  ebcdfghj
+7	  bcdfghhj
+8	  ibcdfghj
+7	  bcdfghj
+8	  obcdfghj
+7	  bcdfghj
+8 	  ubcdfghj
+total characters 75
+Number of Lines are 10
+No of Words count: 10
+```
  
 cat > palindrome.sh
 ```bash
@@ -1140,7 +1363,22 @@ else
 fi
 ```
 ## OUTPUT 
+```
+locathost:~# chmod 755 palindrome.sh
+locathost:~# ./palindrome.sh
+Enter the number
+21
+Number is NOT palindrome
+```
 
+```
+locathost:~# chmod 755 palindrome.sh
+locathost:~# ./palindrome.sh
+Enter the number
+33
+Number is palindrome
+locathost:~#
+```
 
-# RESULT:
+## RESULT:
 The Commands are executed successfully.
