@@ -337,6 +337,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
+![44](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/85e9d712-ed60-4499-a832-924a5af54927)
 
 
 cat > file22
@@ -350,13 +351,15 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-
+![45](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/ec089e79-b3d0-450b-a8c3-8ea0bd949e32)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+ ![46](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/01751d74-7e92-4c93-8ef4-1ed9e5b22a48)
+
 
 cat < urllist.txt
 ```
@@ -373,17 +376,19 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
+ ![47](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/8c901d20-9fc2-4e8e-997a-4820710757af)
 
 
- 
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
+![48](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/57adfa5f-0ddd-4974-9232-fafef1cabf70)
 
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
+![Screenshot 2024-03-29 122717](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/320c7704-7e43-464b-b8ca-ed3f1add62c4)
 
 
 mkdir backupdir
@@ -392,18 +397,26 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
+![Screenshot 2024-03-29 122733](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/5fdfcefa-20c8-4cba-957c-81f2f167da9f)
 
 
 tar -xvf backup.tar
 ## OUTPUT
+![Screenshot 2024-03-29 122751](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/1395c7e0-5da7-4e28-98a5-01fc08709a80)
+
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
+![Screenshot 2024-03-29 122805](https://github.com/VPOOJAASREE/OS-Linux-commands-Shell-script/assets/155145525/badbe015-26e9-41cd-8540-9af4cfd5d763)
+
  
 gunzip backup.tar.gz
 ## OUTPUT
+```
+backup.tar
+```
 
  
 # Shell Script
